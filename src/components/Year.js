@@ -6,9 +6,10 @@ export const Year = (props) => {
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: props.year.color, color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  props.year.color" }}
+      contentArrowStyle={{ borderRight: "7px solid " + props.year.color }}
       date={props.year.year}
       iconStyle={{ background: props.year.color, color: "#fff" }}
+      icon={props.year.icon}
     >
       <h3 className="vertical-timeline-element-title">
         {props.year.eventTitle}
