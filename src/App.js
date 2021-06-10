@@ -2,6 +2,7 @@ import "./App.css";
 import HomePage from "./components/Home";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./styles";
+import TimeLine from "./components/TimeLine";
 
 const theme = {
   mainColor: "white",
@@ -14,6 +15,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <HomePage />
+        <TimeLine />
       </ThemeProvider>
     </div>
   );
