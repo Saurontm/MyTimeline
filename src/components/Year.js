@@ -1,5 +1,6 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { EventTitle, EventContent } from "../styles";
 
 export const Year = (props) => {
   return (
@@ -11,10 +12,10 @@ export const Year = (props) => {
       iconStyle={{ background: props.year.color, color: "#fff" }}
       icon={props.year.icon}
     >
-      <h3 className="vertical-timeline-element-title">
+      <EventTitle className="vertical-timeline-element-title">
         {props.year.eventTitle}
-      </h3>
-      <p>{props.year.event}</p>
+      </EventTitle>
+      <EventContent>{props.year.event}</EventContent>
     </VerticalTimelineElement>
   );
 };
